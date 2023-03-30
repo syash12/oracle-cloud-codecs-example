@@ -26,7 +26,6 @@ RUN rm -rf /usr/share/nginx/html/*
 
 # Copy from the stahg 1
 COPY --from=build /app/build /usr/share/nginx/html
-COPY infrastructure/default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 3000 80
 

@@ -8,3 +8,4 @@ The frontend is created using javascript/react and bootstrapped through `creact-
 ## Things to improve
 - use websockets instead of REST for better latency
 - error handling
+- add a makefile

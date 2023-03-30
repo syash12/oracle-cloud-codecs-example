@@ -15,7 +15,7 @@ function App() {
         <span style={{fontSize:"4em"}} onClick={handlePlayClick}> 
             {isPlaying ? "■" : "▶"} 
         </span>
-        <p> Hit play to start recording audio. </p>
+        <p> Hit play to start recording audio</p>
         <a className="App-link"
           href="https://github.com/syash12/oracle-cloud-codecs-example"
           target="_blank"
