@@ -30,3 +30,15 @@ spec:
           - name: BACKEND_CLUSTERIP
             value: ""
 ---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+spec:
+  type: NodePort
+  selector:
+    app: backend
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8000
