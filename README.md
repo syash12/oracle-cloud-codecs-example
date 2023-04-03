@@ -14,3 +14,5 @@ The backend is written in python/FastAPI. To start dev server just run
 - use websockets instead of REST for better latency
 - error handling
 - add a makefile
+- maybe shouldve used more than 1 branch
+- 
