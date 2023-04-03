@@ -7,18 +7,18 @@ provider "oci" {
   region        = var.region
 }
 
-# resource "oci_artifacts_container_repository" "image_repository" {
-#   # required
-#   compartment_id = var.tenancy_ocid
-#   display_name   = "yshahi-test"
-#   readme {
-#         content = "yash's private image repository"
-#         format = "text/plain"
-#     }
+resource "oci_artifacts_container_repository" "image_repository" {
+  # required
+  compartment_id = var.tenancy_ocid
+  display_name   = "yshahi-test"
+  readme {
+        content = "yash's private image repository"
+        format = "text/plain"
+    }
 
-#   # optional
-#   is_public    = false
-# }
+  # optional
+  is_public    = false
+}
 
 resource "oci_core_vcn" "default_vcn" {
     compartment_id = var.tenancy_ocid
@@ -26,10 +26,10 @@ resource "oci_core_vcn" "default_vcn" {
     display_name   = "Default VCN"
 }
 
-resource "oci_core_subnet" "lb_subnet" {
+resource "oci_core_subnet" "default_subnet" {
   compartment_id = var.tenancy_ocid
   cidr_block = "10.0.1.0/24"
-  display_name = "LB Subnet"
+  display_name = "Default Subnet"
   vcn_id = oci_core_vcn.default_vcn.id
 }
 
