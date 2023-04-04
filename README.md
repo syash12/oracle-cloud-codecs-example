@@ -17,4 +17,6 @@ Currently the build process for both the frontend and backend is me running `doc
 I have the oracle cloud infrastrcture configured in terraform. It should create an image repo, virtual networks/subnets, and a kubernetes cluster. 
 
 ## TODO
-- fix microphone recording 
+- fix microphone recording on frontend
+- actually do something on backend
+- fill out k8s cluster terraform config 
