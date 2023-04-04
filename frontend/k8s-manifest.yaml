@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
       - name: frontend-app
-        image: ""
+        image: "axwdgpdkjhye/image-repo:frontend"
+        imagePullPolicy: Always
         ports:
           - containerPort: 80
         resources:
