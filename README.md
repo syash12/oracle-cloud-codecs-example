@@ -14,4 +14,4 @@ The backend is written in python/FastAPI. To start dev server just run
 Currently the build process for both the frontend and backend is me running `docker build` and then pushing the images manually into my OCI Container Registry. Using Kubernetes to deploy the apps into the cloud. 
 
 ## Terraform
-I have the oracle cloud infrastrcture coded in terraform. It should create an image repo, virtual networks/subnets, and a kubernetes cluster. 
+I have the oracle cloud infrastrcture configured in terraform. It should create an image repo, virtual networks/subnets, and a kubernetes cluster. 
