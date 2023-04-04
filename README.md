@@ -1,5 +1,5 @@
 # oracle-cloud-codecs-example
-This project will be used to play around with Oracle Cloud Infrastructure and video/audio codecs. 
+This project will be used to play around with Oracle Cloud Infrastructure and video/audio codecs. The project will have a frontend that records audio using your microphone and then lets you play it back. It will also send the data to a backend through REST APIs which will then transcribe the audio to text and return the text to be displayed.
 
 ## Frontend
 The frontend is created using javascript/react and bootstrapped through `creact-react-app`. 

@@ -13,11 +13,11 @@ resource "oci_artifacts_container_repository" "image_repository" {
   display_name   = "image-repo"
   readme {
         content = "yash's private image repository"
-        format = "text/plain"
+        format  = "text/plain"
     }
 
   # optional
-  is_public    = false
+  is_public     = false
 }
 
 # set up default VCN
